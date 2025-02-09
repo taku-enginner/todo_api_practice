@@ -1,24 +1,34 @@
-# README
+# RailsAPIを試すTODOアプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+以下に対してリクエストを送ることができます。
+`https://todo-api-practice.onrender.com`
 
-Things you may want to cover:
+* パラメータ
+  * タスクタイトル：title
+  * タスク内容：content
+```
+# タスク一覧
+GET https://todo-api-practice.onrender.com/tasks
 
-* Ruby version
+# タスク詳細
+GET https://todo-api-practice.onrender.com/tasks/id
 
-* System dependencies
+# タスク作成
+POST https://todo-api-practice.onrender.com/tasks
 
-* Configuration
+# タスク編集
+PATCH https://todo-api-practice.onrender.com/tasks/id
 
-* Database creation
+# タスク削除
+DELETE https://todo-api-practice.onrender.com/tasks/id
+```
 
-* Database initialization
 
-* How to run the test suite
+## 環境構築
+以下の資料を参考に環境構築しました。
+https://hackmd.io/@SKjw2RY-RNCUNSdJfEWPig/rkt40B0FR
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 変更点
+`docker compose run --rm web bundle exec rails new . -d postgresql -j esbuild --css=tailwind`
+↓
+`docker compose run --rm web bundle exec rails new . --api -d postgresql`
