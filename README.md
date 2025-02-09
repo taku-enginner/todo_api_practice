@@ -1,7 +1,8 @@
 # RailsAPIを試すTODOアプリ
 
 以下に対してリクエストを送ることができます。
-`https://todo-api-practice.onrender.com`
+
+* `https://todo-api-practice.onrender.com`
 
 * パラメータ
   * タスクタイトル：title
