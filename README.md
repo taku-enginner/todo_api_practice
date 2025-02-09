@@ -31,5 +31,7 @@ https://hackmd.io/@SKjw2RY-RNCUNSdJfEWPig/rkt40B0FR
 
 ### 変更点
 `docker compose run --rm web bundle exec rails new . -d postgresql -j esbuild --css=tailwind`
+
 ↓
+
 `docker compose run --rm web bundle exec rails new . --api -d postgresql`
