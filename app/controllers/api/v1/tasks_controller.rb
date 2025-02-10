@@ -1,6 +1,7 @@
 module Api
   module V1
     class TasksController < BaseController
+      
       before_action :set_task, only: %i[ show update destroy ]
     
       # GET /tasks
