@@ -3,7 +3,11 @@ Rails.application.routes.draw do
   
   namespace :api do
     namespace :v1 do
+      resources :sessions, only: %i[create destroy]
       resources :tasks
+      namespace :admin do
+        resources :users
+      end
     end
   end
 
