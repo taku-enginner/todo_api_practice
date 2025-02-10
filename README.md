@@ -1,4 +1,4 @@
-# RailsAPIを試すTODOアプリ
+# TODOアプリ（RailsAPI練習用）
 
 以下に対してリクエストを送ることができます。
 
@@ -30,6 +30,10 @@ DELETE https://todo-api-practice.onrender.com/tasks/id
 https://hackmd.io/@SKjw2RY-RNCUNSdJfEWPig/rkt40B0FR
 
 ### 変更点
+※変更前
 `docker compose run --rm web bundle exec rails new . -d postgresql -j esbuild --css=tailwind`
+
 ↓
+
+※変更後
 `docker compose run --rm web bundle exec rails new . --api -d postgresql`
